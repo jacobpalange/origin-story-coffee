@@ -121,8 +121,8 @@ body::after{
 }
 
 .brand-logo{
-  width:58px;
-  height:58px;
+  width:95px;
+  height:auto;
   object-fit: contain;
   border-radius: 14px;
   border:1px solid rgba(255,255,255,.16);
