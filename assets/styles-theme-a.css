@@ -681,3 +681,56 @@ body::after{
   .arrow svg{ width: 20px; height: 20px; }
   .info-label{ min-width: 68px; }
 }
+
+/* ===== Mobile CTA focus: 1 primary (sticky), 1 secondary (hero) ===== */
+@media (max-width: 900px){
+  /* Hide hero "Order Ahead" so it isn't duplicated with sticky bar */
+  .hero-actions .btn-primary{
+    display: none;
+  }
+
+  /* Make View Menu larger + full width */
+  .hero-actions .btn-ghost{
+    width: 100%;
+    justify-content: center;
+    padding: 16px 18px;
+    font-size: 16px;
+  }
+
+  /* Tighten hero spacing */
+  .hero{
+    padding: 26px 0 44px;
+  }
+
+  .hero-title{
+    margin: 10px 0 10px;
+    line-height: .92;
+  }
+
+  .hero-lead{
+    margin: 0 0 12px;
+  }
+
+  .info-card{
+    margin-top: 12px;
+  }
+
+  /* Give sticky bar a little breathing room from screen edges */
+  .mobile-order{
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  /* Prevent sticky bar from covering content */
+  main{
+    padding-bottom: 84px;
+  }
+}
+
+@media (max-width: 900px){
+  .mobile-order a{
+    font-size: 16px;
+    letter-spacing: .02em;
+  }
+}
