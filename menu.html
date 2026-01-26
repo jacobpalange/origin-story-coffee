@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Menu • Origin Story Coffee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles-theme-a"/></head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><div class="container">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span><h1>Origin Story</h1><small>Coffee • Downtown • Local</small></span></a>
+    <div class="nav-links">
+      <a href="menu.html">Menu</a><a href="about.html">About</a><a href="visit.html">Visit</a><a href="contact.html">Contact</a>
+      <a class="cta-outline" href="/order">Order</a>
+    </div>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+  </nav>
+  <div class="mobile-menu" data-mobile-menu>
+    <a href="menu.html">Menu</a><a href="about.html">About</a><a href="visit.html">Visit</a><a href="contact.html">Contact</a>
+    <div class="row"><a class="cta" href="/order">Order on Square</a><a class="cta-outline" href="visit.html">Hours</a></div>
+  </div>
+</div></header>
+
+<main id="main">
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Menu</h2>
+        <p>Keep this list curated. Link out to Square for full ordering detail.</p>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Espresso</h3>
+          <p class="lead" style="font-size:14px;margin:0 0 14px 0;color:rgba(243,239,230,.72)">Classic builds, done right.</p>
+          <div class="pill-row">
+            <span class="pill">Espresso</span><span class="pill">Americano</span><span class="pill">Cappuccino</span>
+            <span class="pill">Latte</span><span class="pill">Mocha</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Cold</h3>
+          <p class="lead" style="font-size:14px;margin:0 0 14px 0;color:rgba(243,239,230,.72)">Fast, clean, refreshing.</p>
+          <div class="pill-row">
+            <span class="pill">Cold Brew</span><span class="pill">Iced Latte</span><span class="pill">Seasonal Iced</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px" class="panel">
+        <h3>Order ahead</h3>
+        <p>For prices, modifiers, and live availability, order through Square.</p>
+        <div class="row"><a class="cta" href="/order">Open Ordering</a><a class="cta-outline" href="visit.html">Visit info</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><div class="brand"><span class="brand-mark"></span><span><h1 style="margin:0">Origin Story</h1><small>Downtown coffee with an edge.</small></span></div></div>
+    <div><div class="pill" style="display:inline-block;margin-bottom:8px">Links</div><div style="display:grid;gap:8px">
+      <a href="menu.html">Menu</a><a href="visit.html">Visit</a><a href="/order">Order</a></div></div>
+    <div><div class="pill" style="display:inline-block;margin-bottom:8px">Contact</div><div style="display:grid;gap:8px">
+      <a href="contact.html">Email</a><a href="#" rel="noopener">Instagram</a></div></div>
+  </div>
+  <div style="margin-top:18px;color:rgba(243,239,230,.55);font-size:12px">© <span id="year"></span> Origin Story Coffee</div>
+</div></footer>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
