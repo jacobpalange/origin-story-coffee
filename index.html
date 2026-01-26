@@ -16,22 +16,22 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Origin Story Coffee home">
         <img class="brand-logo" src="assets/images/logo.avif" alt="Origin Story Coffee logo">
         <span class="brand-text">
-          <span class="brand-name">Origin Story</span>
-          <span class="brand-tag">Coffee • Downtown • Local</span>
+          <span class="brand-name">Origin Story Coffee</span>
+          <span class="brand-tag">Downtown Pittsburgh</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
         <a href="menu.html">Menu</a>
-        <a href="#visit">Visit</a>
         <a href="about.html">About</a>
-        <a class="nav-pill" href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift Cards</a>
+        <a href="#visit">Visit</a>
+        <a href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift Cards</a>
         <a href="contact.html">Contact</a>
       </nav>
 
@@ -40,24 +40,23 @@
       </button>
     </div>
 
-    <!-- Mobile menu -->
     <div class="container mobile-menu" data-mobile-menu>
       <a href="menu.html">Menu</a>
-      <a href="#visit">Visit</a>
       <a href="about.html">About</a>
+      <a href="#visit">Visit</a>
       <a href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift Cards</a>
       <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
+    <!-- ABOVE THE FOLD (Simple / Poster-like) -->
     <section class="hero">
       <div class="container hero-grid">
-        <!-- LEFT: COPY -->
+        <!-- Left -->
         <div class="hero-copy">
           <div class="kicker">
-            <span class="dot" aria-hidden="true"></span>
+            <span class="kdot" aria-hidden="true"></span>
             Downtown coffee with comic energy
           </div>
 
@@ -68,168 +67,129 @@
             Simple choices. Fast ordering. Friendly faces.
           </p>
 
-          <!-- ESSENTIAL INFO -->
-          <div class="hero-essentials">
-            <div class="speech" role="note" aria-label="Hours and location">
-              <div class="speech-row">
-                <span class="speech-label">Hours</span>
-                <span class="speech-value">Mon–Fri 7:30 AM – 2:30 PM</span>
-              </div>
-              <div class="speech-row">
-                <span class="speech-label">Weekends</span>
-                <span class="speech-value">Closed</span>
-              </div>
-              <div class="speech-row">
-                <span class="speech-label">Address</span>
-                <span class="speech-value">
-                  309 Smithfield St Ste 1A<br>
-                  Pittsburgh, PA 15222
-                </span>
-              </div>
-              <div class="speech-row">
-                <span class="speech-label">Phone</span>
-                <span class="speech-value">
-                  <a href="tel:+14124005628">(412) 400-5628</a>
-                </span>
-              </div>
+          <div class="info-card" aria-label="Hours, address, and phone">
+            <div class="info-row">
+              <span class="info-label">Hours</span>
+              <span class="info-value">Mon – Fri 7:30 AM – 2:30 PM • Sat/Sun Closed</span>
             </div>
+            <div class="info-row">
+              <span class="info-label">Address</span>
+              <span class="info-value">309 Smithfield St Ste 1A, Pittsburgh, PA 15222</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Phone</span>
+              <span class="info-value"><a class="tel" href="tel:+14124005628">(412) 400-5628</a></span>
+            </div>
+          </div>
 
-            <!-- ORDER (ONLY ONCE ABOVE FOLD) -->
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="/order">Order Ahead</a>
-              <a class="btn btn-ghost" href="menu.html">View Menu</a>
-            </div>
-
-            <div class="micro-links">
-              <a href="#visit">Hours & parking →</a>
-              <a href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift cards →</a>
-              <a href="tel:+14124005628">Call →</a>
-            </div>
-
-            <!-- COMIC POP BUBBLES -->
-            <div class="bubble-row" aria-label="Quick actions">
-              <a class="bubble bubble-red" href="menu.html">What to get</a>
-              <a class="bubble bubble-blue" href="#visit">Find us</a>
-              <a class="bubble bubble-gold" href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift cards</a>
-            </div>
+          <!-- Only buttons you want -->
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/order">Order Ahead</a>
+            <a class="btn btn-ghost" href="menu.html">View Menu</a>
           </div>
         </div>
 
-        <!-- RIGHT: PHOTO SLIDER -->
+        <!-- Right: Slider -->
         <aside class="slider card" aria-label="Shop photos" data-slider>
-          <div class="slider-media">
-            <img class="slide is-active" src="assets/images/mural.jpg" alt="Mural inside Origin Story Coffee">
+          <div class="slider-media" aria-label="Photo slideshow">
+            <img class="slide is-active" src="assets/images/download.jpg" alt="Superhero mural inside Origin Story Coffee">
+            <img class="slide" src="assets/images/mural.jpg" alt="Mural inside Origin Story Coffee">
             <img class="slide" src="assets/images/348s.jpg" alt="Interior view at Origin Story Coffee">
-            <img class="slide" src="assets/images/download.jpg" alt="Superhero art inside Origin Story Coffee">
-          </div>
 
-          <div class="slider-controls">
-            <button class="arrow arrow-left" type="button" aria-label="Previous photo" data-prev>‹</button>
-            <button class="arrow arrow-right" type="button" aria-label="Next photo" data-next>›</button>
+            <div class="slider-controls" aria-label="Slideshow controls">
+              <button class="arrow arrow-left" type="button" aria-label="Previous photo" data-prev>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <button class="arrow arrow-right" type="button" aria-label="Next photo" data-next>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- QUICK PICKS -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Quick picks</h2>
-          <p class="section-sub">Three easy choices so customers don’t overthink it.</p>
-        </div>
-
-        <div class="cards-3">
-          <article class="card pad">
-            <h3>Signature Latte</h3>
-            <p>Balanced, smooth, and fast to love.</p>
-          </article>
-
-          <article class="card pad">
-            <h3>Seasonal Special</h3>
-            <p>Rotates often — ask what’s new.</p>
-          </article>
-
-          <article class="card pad">
-            <h3>Cold Brew</h3>
-            <p>Clean, bold, and easy to grab.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- VISIT (HOMEPAGE SECTION, NO SEPARATE PAGE) -->
+    <!-- BELOW THE FOLD -->
     <section class="section" id="visit">
-      <div class="container">
-        <div class="visit-card">
-          <div class="section-head">
-            <h2 class="section-title">Visit</h2>
-            <p class="section-sub">Downtown, simple to find, easy to stop in.</p>
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Good to know</h2>
+        <p class="section-sub">A couple quick details before you swing by.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="panel">
+          <div class="panel-title">Parking</div>
+          <div class="panel-body">
+            Street parking on Smithfield + nearby garages. (Add best garage name if you want.)
           </div>
+        </div>
 
-          <div class="visit-grid">
-            <div class="visit-block">
-              <div class="visit-label">Hours</div>
-              <div class="visit-value">Monday–Friday<br><strong>7:30 AM – 2:30 PM</strong></div>
-              <div class="visit-muted">Saturday & Sunday: Closed</div>
-            </div>
+        <div class="panel">
+          <div class="panel-title">Downtown tip</div>
+          <div class="panel-body">
+            Quick grab-and-go friendly — also a good spot to hang for a bit.
+          </div>
+        </div>
 
-            <div class="visit-block">
-              <div class="visit-label">Address</div>
-              <div class="visit-value">
-                309 Smithfield St Ste 1A<br>
-                Pittsburgh, PA 15222
-              </div>
-              <div class="visit-actions">
-                <a class="mini-btn" href="https://maps.google.com/?q=309%20Smithfield%20St%20Ste%201A%2C%20Pittsburgh%2C%20PA%2015222" rel="noopener">Open in Maps</a>
-                <a class="mini-btn" href="tel:+14124005628">Call</a>
-              </div>
-            </div>
-
-            <div class="visit-block">
-              <div class="visit-label">Parking</div>
-              <div class="visit-value">Street parking + nearby garages</div>
-              <div class="visit-muted">Downtown garages within a block or two.</div>
+        <div class="panel">
+          <div class="panel-title">Gift Cards</div>
+          <div class="panel-body">
+            Send someone downtown coffee + comic energy.
+            <div class="panel-actions">
+              <a class="mini-btn" href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Buy Gift Cards</a>
             </div>
           </div>
         </div>
       </div>
+
+        <!-- Email signup (Netlify Forms) -->
+        <div class="signup card">
+          <div class="signup-copy">
+            <h2 class="section-title">Get updates</h2>
+            <p class="section-sub">New drinks + shop news — occasional, not annoying.</p>
+          </div>
+
+          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="signup-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required>
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+
+          <p class="fineprint">By signing up, you’ll get occasional updates from Origin Story Coffee.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <div class="footer-brand-row">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
             <img class="brand-logo small" src="assets/images/logo.avif" alt="">
             <div>
               <div class="footer-name">Origin Story Coffee</div>
-              <div class="footer-tag">Downtown • Local • Art-forward</div>
+              <div class="footer-tag">309 Smithfield St Ste 1A • Pittsburgh, PA 15222</div>
+              <div class="footer-tag"><a class="tel" href="tel:+14124005628">(412) 400-5628</a></div>
             </div>
           </div>
-          <p class="footer-note">
-            309 Smithfield St Ste 1A • Pittsburgh, PA 15222<br>
-            (412) 400-5628
-          </p>
         </div>
 
-        <div>
-          <div class="footer-head">Links</div>
-          <div class="footer-links">
-            <a href="menu.html">Menu</a>
-            <a href="#visit">Visit</a>
-            <a href="about.html">About</a>
-            <a href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift Cards</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-head">Social</div>
-          <div class="footer-links">
-            <a href="#" rel="noopener">Instagram</a>
-            <a href="#" rel="noopener">Facebook</a>
-          </div>
+        <div class="footer-links">
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="#visit">Visit</a>
+          <a href="https://originstorycoffee.square.site/s/gift-cards" rel="noopener">Gift Cards</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
 
@@ -238,7 +198,7 @@
       </div>
     </footer>
 
-    <!-- MOBILE ORDER -->
+    <!-- Mobile sticky order -->
     <div class="mobile-order">
       <a href="/order">Order Ahead</a>
     </div>
@@ -247,54 +207,80 @@
   <script>
     // Mobile nav
     const burger = document.querySelector('[data-burger]');
-    const menu = document.querySelector('[data-mobile-menu]');
-    if (burger && menu) {
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+    if (burger && mobileMenu) {
       burger.addEventListener('click', () => {
-        const isOpen = menu.classList.toggle('is-open');
-        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        const open = mobileMenu.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
     }
 
-    // Year
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Slider: arrows + swipe/drag
+    // Slider (arrows + swipe/drag)
     const slider = document.querySelector('[data-slider]');
     if (slider) {
       const slides = Array.from(slider.querySelectorAll('.slide'));
       const media = slider.querySelector('.slider-media');
       const prevBtn = slider.querySelector('[data-prev]');
       const nextBtn = slider.querySelector('[data-next]');
-      let i = 0, timer;
 
-      function show(n){
-        i = (n + slides.length) % slides.length;
-        slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+      let idx = 0;
+      let timer = null;
+
+      function show(i) {
+        idx = (i + slides.length) % slides.length;
+        slides.forEach((s, n) => s.classList.toggle('is-active', n === idx));
       }
-      function next(){ show(i+1); }
-      function prev(){ show(i-1); }
+      function next() { show(idx + 1); }
+      function prev() { show(idx - 1); }
 
-      function start(){ stop(); timer = setInterval(next, 4200); }
-      function stop(){ if (timer) clearInterval(timer); }
+      function start() {
+        stop();
+        timer = setInterval(next, 4200);
+      }
+      function stop() {
+        if (timer) clearInterval(timer);
+        timer = null;
+      }
 
-      prevBtn.addEventListener('click', ()=>{ prev(); start(); });
-      nextBtn.addEventListener('click', ()=>{ next(); start(); });
+      prevBtn.addEventListener('click', () => { prev(); start(); });
+      nextBtn.addEventListener('click', () => { next(); start(); });
 
-      let startX = 0, down = false;
-      media.addEventListener('mousedown', e => { down=true; startX=e.clientX; stop(); });
-      window.addEventListener('mouseup', e => {
-        if(!down) return;
-        down=false;
-        const dx = e.clientX - startX;
-        if (Math.abs(dx) > 45) dx < 0 ? next() : prev();
+      // drag/swipe
+      let down = false;
+      let startX = 0;
+      let lastX = 0;
+      const THRESHOLD = 40;
+
+      function pointerDown(x){
+        down = true;
+        startX = x;
+        lastX = x;
+        stop();
+      }
+      function pointerMove(x){
+        if (!down) return;
+        lastX = x;
+      }
+      function pointerUp(){
+        if (!down) return;
+        down = false;
+        const dx = lastX - startX;
+        if (Math.abs(dx) > THRESHOLD) {
+          dx < 0 ? next() : prev();
+        }
         start();
-      });
-      media.addEventListener('touchstart', e => { startX=e.touches[0].clientX; stop(); }, {passive:true});
-      media.addEventListener('touchend', e => {
-        const dx = e.changedTouches[0].clientX - startX;
-        if (Math.abs(dx) > 45) dx < 0 ? next() : prev();
-        start();
-      });
+      }
+
+      media.addEventListener('mousedown', (e) => pointerDown(e.clientX));
+      window.addEventListener('mousemove', (e) => pointerMove(e.clientX));
+      window.addEventListener('mouseup', pointerUp);
+
+      media.addEventListener('touchstart', (e) => pointerDown(e.touches[0].clientX), { passive: true });
+      media.addEventListener('touchmove', (e) => pointerMove(e.touches[0].clientX), { passive: true });
+      media.addEventListener('touchend', pointerUp);
 
       start();
     }
