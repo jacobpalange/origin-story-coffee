@@ -3,20 +3,20 @@
    ========================================================= */
 
 :root{
-  --bg: #0b0e14;
+  --bg: #050505;
 
-  /* mural-inspired accents */
-  --red:  #d13a2b;
-  --blue: #2f6fc9;
-  --gold: #f2c14b;
+  /* Pittsburgh black + gold */
+  --red:  #c9a227;   /* reused as gold in gradients/buttons */
+  --blue: #000000;   /* reused as black in gradients/buttons */
+  --gold: #ffcc33;
 
-  --text: #f4efe6;
-  --muted: rgba(244,239,230,.74);
-  --muted2: rgba(244,239,230,.58);
+  --text: #f5e7b2;
+  --muted: rgba(245,231,178,.76);
+  --muted2: rgba(245,231,178,.58);
 
-  --surface: rgba(14,16,22,.62);
-  --border: rgba(255,255,255,.12);
-  --shadow: 0 18px 55px rgba(0,0,0,.46);
+  --surface: rgba(10,10,10,.78);
+  --border: rgba(255,204,51,.18);
+  --shadow: 0 18px 55px rgba(0,0,0,.58);
 
   --radius: 18px;
   --max: 1120px;
@@ -48,11 +48,11 @@ body::before{
   inset:-10%;
   z-index:-2;
   background:
-    linear-gradient(180deg, rgba(11,14,20,.28), rgba(11,14,20,.72)),
+    linear-gradient(180deg, rgba(5,5,5,.40), rgba(5,5,5,.84)),
     url("images/download.jpg") center/cover no-repeat;
-  filter: blur(38px) saturate(1.22) contrast(1.10);
+  filter: blur(38px) saturate(.75) contrast(1.08) brightness(.62);
   transform: scale(1.10);
-  opacity: .48;
+  opacity: .42;
 }
 
 body::after{
@@ -62,16 +62,16 @@ body::after{
   z-index:-1;
   pointer-events:none;
   background:
-    radial-gradient(900px 600px at 12% 18%, rgba(209,58,43,.18), transparent 62%),
-    radial-gradient(900px 700px at 88% 22%, rgba(47,111,201,.16), transparent 65%),
-    radial-gradient(820px 620px at 50% 92%, rgba(242,193,75,.10), transparent 70%),
-    radial-gradient(rgba(244,239,230,.08) 1px, transparent 1px),
-    radial-gradient(rgba(244,239,230,.04) 1px, transparent 1px),
-    radial-gradient(1200px 720px at 50% 24%, transparent 35%, rgba(11,14,20,.60) 100%);
+    radial-gradient(900px 600px at 12% 18%, rgba(255,204,51,.14), transparent 62%),
+    radial-gradient(900px 700px at 88% 22%, rgba(201,162,39,.10), transparent 65%),
+    radial-gradient(820px 620px at 50% 92%, rgba(255,204,51,.08), transparent 70%),
+    radial-gradient(rgba(245,231,178,.06) 1px, transparent 1px),
+    radial-gradient(rgba(245,231,178,.03) 1px, transparent 1px),
+    radial-gradient(1200px 720px at 50% 24%, transparent 35%, rgba(0,0,0,.72) 100%);
   background-size: auto, auto, auto, 16px 16px, 22px 22px, auto;
   background-position: center, center, center, 0 0, 9px 11px, center;
-  opacity:.78;
-  mix-blend-mode: overlay;
+  opacity:.82;
+  mix-blend-mode: screen;
 }
 
 .container{
@@ -222,7 +222,7 @@ body::after{
   height: 9px;
   border-radius: 999px;
   background: var(--gold);
-  box-shadow: 0 0 0 4px rgba(242,193,75,.12);
+  box-shadow: 0 0 0 4px rgba(255,204,51,.14);
 }
 
 .hero-title{
@@ -298,8 +298,8 @@ body::after{
 }
 
 .btn-primary{
-  background: linear-gradient(135deg, var(--red), var(--blue));
-  color: #fff;
+  background: linear-gradient(135deg, #ffcc33, #8f6f12);
+  color: #000;
   box-shadow: var(--shadow);
 }
 
@@ -508,8 +508,8 @@ body::after{
 }
 
 .signup-form input[type="email"]:focus{
-  border-color: rgba(242,193,75,.55);
-  box-shadow: 0 0 0 4px rgba(242,193,75,.14);
+  border-color: rgba(255,204,51,.65);
+  box-shadow: 0 0 0 4px rgba(255,204,51,.16);
 }
 
 .fineprint{
@@ -608,7 +608,8 @@ body::after{
   padding: 14px 16px;
   border-radius: 16px;
   font-weight: 950;
-  background: linear-gradient(135deg, var(--red), var(--blue));
+  background: linear-gradient(135deg, #ffcc33, #8f6f12);
+  color: #000;
   box-shadow: 0 18px 45px rgba(0,0,0,.55);
   text-decoration:none;
 }
@@ -660,7 +661,7 @@ body::after{
 /* Desktop: give the card a visual anchor */
 @media (min-width: 900px){
   .info-card{
-    border-left: 3px solid rgba(242,193,75,.45);
+    border-left: 3px solid rgba(255,204,51,.55);
     padding-left: 20px;
   }
 }
